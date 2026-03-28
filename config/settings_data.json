@@ -616,13 +616,13 @@
           "1888fda2-fecc-4309-8739-4092a6f9dedf"
         ],
         "settings": {
-          "custom_colors": true
+          "custom_colors": false
         }
       },
       "exit-product-popup": {
         "type": "exit-product-popup",
         "settings": {
-          "popup": true,
+          "popup": false,
           "title": "<b class=\"fw-600 mb10\">Wait ! Before you go... This might interest you. </b>",
           "subtitle": "We have some handpicked items for you",
           "collection": "hot-collection",
@@ -739,7 +739,7 @@
           "src_i4rGdn"
         ],
         "settings": {
-          "showmt": true,
+          "showmt": false,
           "hdtxt": false,
           "fsicon": 14,
           "fs": 10,
