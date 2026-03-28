@@ -291,7 +291,7 @@
       "submit": "Soumettre",
       "cancel": "Annuler",
       "subtext": "Nous vous ferons parvenir un courriel pour réinitialiser votre mot de passe.",
-      "success": "Nous vous avons fait parvenir un courriel pour réinitialiser votre mot de passe."
+      "success": "Nous vous alphas fait parvenir un courriel pour réinitialiser votre mot de passe."
     },
     "reset_password": {
       "title": "Réinitialiser le mot de passe du compte",

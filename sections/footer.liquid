@@ -144,7 +144,7 @@
         {% if secSt.copyright_text != blank %}
         <div class="fl1{% if secSt.show_payment %} tc tl-md{% else %} tc{% endif %}">
           {% assign year = "now" | date: "%Y" %}{% assign insert_year = year %}{{  secSt.copyright_text | replace:"[year]", insert_year }}          
-          {% if secSt.show_designby %}<span class="designBy"> Designed by <a class="fw-500" href="https://www.adornthemes.com" target="_blank">AdornThemes</a></span>{% endif %}
+          {% if secSt.show_designby %}<span class="designBy"> Designed by <a class="fw-500" href="https://joldisoft.com" target="_blank">Joldisoft Technologies</a></span>{% endif %}
         </div>
         {% endif %}
       	{% if secSt.show_payment %}
@@ -161,645 +161,644 @@
   {% endif %}
 </footer>
 {% endcapture %}
-{{ site_footer | strip_newlines | remove: "  " | remove: "	" }}
+{{ site_footer | strip_newlines | remove: '  ' | remove: '	' }}
 {% schema %}
-  {
-
-    "name": "t:sections.footer_section.name",
-    "settings": [
+{
+  "name": "t:sections.footer_section.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "section_width",
+      "label": "t:global.fullwidth",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "copyright_text",
+      "label": "t:sections.footer_section.copyright_text",
+      "default": "© [year],Alpha. All Rights Reserved."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_designby",
+      "label": "t:sections.footer_section.designed_by",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer_section.payment_options"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_payment",
+      "label": "t:global.display",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "payment_img",
+      "label": "t:sections.footer_section.payment_image",
+      "info": "t:sections.footer_section.payment_image_info"
+    },
+    {
+      "type": "text",
+      "id": "payment_img_width",
+      "label": "t:sections.footer_section.max_width",
+      "default": "350"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer_section.mobile_site"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_center",
+      "label": "t:sections.footer_section.align_center",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_collapse",
+      "label": "t:sections.footer_section.disable_menu_collapse",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:global.snow.title"
+    },
+    {
+      "type": "checkbox",
+      "id": "snow_effect",
+      "label": "t:global.enable",
+      "default": false,
+      "info": "For Christmas"
+    },
+    {
+      "type": "select",
+      "id": "snow_style",
+      "label": "t:global.snow.style",
+      "default": "style1",
+      "options": [
         {
-            "type": "checkbox",
-            "id": "section_width",
-            "label": "t:global.fullwidth",
-            "default": false
+          "value": "style1",
+          "label": "Falling Down"
         },
         {
-            "type": "textarea",
-            "id": "copyright_text",
-            "label": "t:sections.footer_section.copyright_text",
-            "default": "© [year],Avone. All Rights Reserved."
-        },
-        {
-            "type": "checkbox",
-            "id": "show_designby",
-            "label": "t:sections.footer_section.designed_by",
-            "default": true
-        },
-        {
-            "type": "header",
-            "content": "t:sections.footer_section.payment_options"
-        },
-        {
-            "type": "checkbox",
-            "id": "show_payment",
-            "label": "t:global.display",
-            "default": true
-        },
-        {
-            "type": "image_picker",
-            "id": "payment_img",
-            "label": "t:sections.footer_section.payment_image",
-            "info": "t:sections.footer_section.payment_image_info"
-        },
-        {
-            "type": "text",
-            "id": "payment_img_width",
-            "label": "t:sections.footer_section.max_width",
-            "default": "350"
-        },
-       {
-            "type": "header",
-            "content": "t:sections.footer_section.mobile_site"
-        },
-        {
-            "type": "checkbox",
-            "id": "mobile_center",
-            "label": "t:sections.footer_section.align_center",
-            "default": false            
-        },
-        {
-            "type": "checkbox",
-            "id": "mobile_collapse",
-            "label": "t:sections.footer_section.disable_menu_collapse",
-            "default": false            
-        },
-        {
-            "type": "header",
-            "content": "t:global.snow.title"
-        },
-        {
-            "type": "checkbox",
-            "id": "snow_effect",
-            "label": "t:global.enable",
-            "default": false,
-            "info": "For Christmas"
-        },
-        {
-            "type": "select",
-            "id": "snow_style",
-            "label": "t:global.snow.style",
-            "default": "style1",
-            "options": [
-                {
-                    "value": "style1",
-                    "label": "Falling Down"
-                },
-                {
-                    "value": "style2",
-                    "label": "Falling From Left"
-                }
-            ]
+          "value": "style2",
+          "label": "Falling From Left"
         }
-    ],
-    "blocks": [
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "t:sections.footer_section.blocks.menu.name",
+      "settings": [
         {
-            "type": "menu",
-            "name": "t:sections.footer_section.blocks.menu.name",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "t:global.text.title",
-                    "default": "Informations"
-                },
-                {
-                    "type": "link_list",
-                    "id": "menulinks",
-                    "label": "t:sections.footer_section.blocks.menu.select",
-                    "default": "main-menu"
-                },
-                {
-                    "type": "select",
-                    "id": "width",
-                    "label": "t:sections.footer_section.container_width",
-                    "default": "wd25-md",
-                    "info": "t:sections.footer_section.container_width_info",
-                    "options": [
-                        {
-                            "value": "wd20-md",
-                            "label": "20%"
-                        },
-                        {
-                            "value": "wd25-md",
-                            "label": "25%"
-                        },
-                        {
-                            "value": "wd33-md",
-                            "label": "33%"
-                        },
-                        {
-                            "value": "wd40-md",
-                            "label": "40%"
-                        },
-                        {
-                            "value": "wd50-md",
-                            "label": "50%"
-                        },
-                        {
-                            "value": "wd60-md",
-                            "label": "60%"
-                        },
-                        {
-                            "value": "wd66-md",
-                            "label": "66%"
-                        },
-                        {
-                            "value": "wd75-md",
-                            "label": "75%"
-                        },
-                        {
-                            "value": "wd100",
-                            "label": "100%"
-                        }
-                    ]
-                },
-                 {
-                    "type": "checkbox",
-                    "id": "hide_mobile",
-                    "label": "t:global.devices.mobile_hide",
-                    "default": false            
-                 }
-            ]
+          "type": "text",
+          "id": "title",
+          "label": "t:global.text.title",
+          "default": "Informations"
         },
         {
-            "type": "contact",
-            "name": "t:sections.footer_section.blocks.contact.name",
-            "limit": 2,
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "t:global.text.title",
-                    "default": "Contact Us"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "logo",
-                    "label": "t:sections.footer_section.blocks.contact.logo"
-                },
-                {
-                    "type": "range",
-                    "id": "logo-width",
-                    "label": "t:sections.footer_section.max_width",
-                    "default": 150,
-                    "min": 100,
-                    "max": 300,
-                    "step": 5,
-                    "unit": "px"
-                },
-                {
-                    "type": "textarea",
-                    "id": "address",
-                    "label": "t:sections.footer_section.blocks.contact.address",
-                    "default": "55 Gallaxy Enque,<br />2568 steet, 23568 NY"
-                },
-                {
-                    "type": "text",
-                    "id": "phone",
-                    "label": "t:sections.footer_section.blocks.contact.phone",
-                    "default": "(440) 000 000 0000"
-                },
-                {
-                    "type": "text",
-                    "id": "email",
-                    "label": "t:sections.footer_section.blocks.contact.email",
-                    "default": "sales@yousite.com"
-                },
-                {
-                    "type": "checkbox",
-                    "id": "show_icons",
-                    "label": "t:sections.footer_section.blocks.contact.show_icons",
-                    "default": false
-                },
-                {
-                    "type": "header",
-                    "content": "t:sections.contact.socials"
-                },
-                {
-                    "type": "checkbox",
-                    "id": "show_socials",
-                    "label": "t:global.display",
-                    "default": true
-                },
-                {
-                    "type": "text",
-                    "id": "socials_ttl",
-                    "label": "t:global.text.title",
-                    "default": "Stay Connected"
-                },
-                {
-                    "type": "select",
-                    "id": "width",
-                    "label": "t:sections.footer_section.container_width",
-                    "default": "wd25-md",
-                    "info": "t:sections.footer_section.container_width_info",
-                    "options": [
-                        {
-                            "value": "wd20-md",
-                            "label": "20%"
-                        },
-                        {
-                            "value": "wd25-md",
-                            "label": "25%"
-                        },
-                        {
-                            "value": "wd33-md",
-                            "label": "33%"
-                        },
-                        {
-                            "value": "wd40-md",
-                            "label": "40%"
-                        },
-                        {
-                            "value": "wd50-md",
-                            "label": "50%"
-                        },
-                        {
-                            "value": "wd60-md",
-                            "label": "60%"
-                        },
-                        {
-                            "value": "wd66-md",
-                            "label": "66%"
-                        },
-                        {
-                            "value": "wd75-md",
-                            "label": "75%"
-                        },
-                        {
-                            "value": "wd100",
-                            "label": "100%"
-                        }
-                    ]
-                },
-                {
-                    "type": "checkbox",
-                    "id": "hide_mobile",
-                    "label": "t:global.devices.mobile_hide",
-                    "default": false            
-                 }
-            ]
+          "type": "link_list",
+          "id": "menulinks",
+          "label": "t:sections.footer_section.blocks.menu.select",
+          "default": "main-menu"
         },
         {
-            "type": "custom",
-            "name": "t:sections.footer_section.blocks.custom.name",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "t:global.text.title",
-                    "default": "About Us"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "logo",
-                    "label": "t:global.image.name"
-                },
-                {
-                    "type": "range",
-                    "id": "logo-width",
-                    "label": "t:sections.footer_section.max_width",
-                    "default": 150,
-                    "min": 100,
-                    "max": 300,
-                    "step": 5,
-                    "unit": "px"
-                },
-                {
-                    "type": "textarea",
-                    "id": "custom-text",
-                    "label": "t:global.text.text",
-                    "default": "Making a profitable ecommerce store is hard work. You can't just open a website and expect people to flood in. If you really want to succeed you have to create traffic"
-                },
-                {
-                    "type": "header",
-                    "content": "t:sections.contact.socials"
-                },
-                {
-                    "type": "checkbox",
-                    "id": "show_socials",
-                    "label": "t:global.display",
-                    "default": true
-                },
-                {
-                    "type": "text",
-                    "id": "socials_ttl",
-                    "label": "t:global.text.title",
-                    "default": "Stay Connected"
-                },
-                {
-                    "type": "paragraph",
-                    "content": "----------------------------------------"
-                },
-                {
-                    "type": "checkbox",
-                    "id": "txt_align",
-                    "label": "t:sections.footer_section.align_center",
-                    "default": false
-                },
-                {
-                    "type": "select",
-                    "id": "width",
-                    "label": "t:sections.footer_section.container_width",
-                    "default": "wd25-md",
-                    "info": "t:sections.footer_section.container_width_info",
-                    "options": [
-                        {
-                            "value": "wd20-md",
-                            "label": "20%"
-                        },
-                        {
-                            "value": "wd25-md",
-                            "label": "25%"
-                        },
-                        {
-                            "value": "wd33-md",
-                            "label": "33%"
-                        },
-                        {
-                            "value": "wd40-md",
-                            "label": "40%"
-                        },
-                        {
-                            "value": "wd50-md",
-                            "label": "50%"
-                        },
-                        {
-                            "value": "wd60-md",
-                            "label": "60%"
-                        },
-                        {
-                            "value": "wd66-md",
-                            "label": "66%"
-                        },
-                        {
-                            "value": "wd75-md",
-                            "label": "75%"
-                        },
-                        {
-                            "value": "wd100",
-                            "label": "100%"
-                        }
-                    ]
-                },
-              {
-                    "type": "checkbox",
-                    "id": "hide_mobile",
-                    "label": "t:global.devices.mobile_hide",
-                    "default": false            
-              }
-            ]
+          "type": "select",
+          "id": "width",
+          "label": "t:sections.footer_section.container_width",
+          "default": "wd25-md",
+          "info": "t:sections.footer_section.container_width_info",
+          "options": [
+            {
+              "value": "wd20-md",
+              "label": "20%"
+            },
+            {
+              "value": "wd25-md",
+              "label": "25%"
+            },
+            {
+              "value": "wd33-md",
+              "label": "33%"
+            },
+            {
+              "value": "wd40-md",
+              "label": "40%"
+            },
+            {
+              "value": "wd50-md",
+              "label": "50%"
+            },
+            {
+              "value": "wd60-md",
+              "label": "60%"
+            },
+            {
+              "value": "wd66-md",
+              "label": "66%"
+            },
+            {
+              "value": "wd75-md",
+              "label": "75%"
+            },
+            {
+              "value": "wd100",
+              "label": "100%"
+            }
+          ]
         },
         {
-            "type": "newsletter",
-            "name": "t:sections.footer_section.blocks.newsletter.name",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "t:global.text.title",
-                    "default": "Newsletter"
-                },
-                {
-                    "type": "text",
-                    "id": "sub_title",
-                    "label": "t:global.text.text",
-                    "default": "Enter your email to receive daily news and get 20% off coupon for all items. NO spam, we promise"
-                },
-                {
-                    "type": "header",
-                    "content": "t:sections.contact.socials"
-                },
-                {
-                    "type": "checkbox",
-                    "id": "show_socials",
-                    "label": "t:global.display",
-                    "default": true
-                },
-                {
-                    "type": "text",
-                    "id": "socials_ttl",
-                    "label": "t:global.text.title",
-                    "default": "Stay Connected"
-                },
-                {
-                    "type": "paragraph",
-                    "content": "----------------------------------------"
-                },
-                {
-                    "type": "checkbox",
-                    "id": "newltr_align",
-                    "label": "t:sections.footer_section.align_center",
-                    "default": false
-                },
-                {
-                    "type": "select",
-                    "id": "width",
-                    "label": "t:sections.footer_section.container_width",
-                    "default": "wd25-md",
-                    "info": "t:sections.footer_section.container_width_info",
-                    "options": [
-                        {
-                            "value": "wd20-md",
-                            "label": "20%"
-                        },
-                        {
-                            "value": "wd25-md",
-                            "label": "25%"
-                        },
-                        {
-                            "value": "wd33-md",
-                            "label": "33%"
-                        },
-                        {
-                            "value": "wd40-md",
-                            "label": "40%"
-                        },
-                        {
-                            "value": "wd50-md",
-                            "label": "50%"
-                        },
-                        {
-                            "value": "wd60-md",
-                            "label": "60%"
-                        },
-                        {
-                            "value": "wd66-md",
-                            "label": "66%"
-                        },
-                        {
-                            "value": "wd75-md",
-                            "label": "75%"
-                        },
-                        {
-                            "value": "wd100",
-                            "label": "100%"
-                        }
-                    ]
-                },
-                {
-                    "type": "checkbox",
-                    "id": "hide_mobile",
-                    "label": "t:global.devices.mobile_hide",
-                    "default": false            
-                 }
-            ]
-        },        
-        {
-            "type": "socialicons",
-            "name": "t:sections.footer_section.blocks.social.name",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "t:global.text.title",
-                    "default": "Stay Connected"
-                },
-                {
-                    "type": "select",
-                    "id": "width",
-                    "label": "t:sections.footer_section.container_width",
-                    "default": "wd25-md",
-                    "info": "t:sections.footer_section.container_width_info",
-                    "options": [
-                        {
-                            "value": "wd20-md",
-                            "label": "20%"
-                        },
-                        {
-                            "value": "wd25-md",
-                            "label": "25%"
-                        },
-                        {
-                            "value": "wd33-md",
-                            "label": "33%"
-                        },
-                        {
-                            "value": "wd40-md",
-                            "label": "40%"
-                        },
-                        {
-                            "value": "wd50-md",
-                            "label": "50%"
-                        },
-                        {
-                            "value": "wd60-md",
-                            "label": "60%"
-                        },
-                        {
-                            "value": "wd66-md",
-                            "label": "66%"
-                        },
-                        {
-                            "value": "wd75-md",
-                            "label": "75%"
-                        },
-                        {
-                            "value": "wd100",
-                            "label": "100%"
-                        }
-                    ]
-                },
-                {
-                    "type": "checkbox",
-                    "id": "hide_mobile",
-                    "label": "t:global.devices.mobile_hide",
-                    "default": false            
-                 }
-            ]
-        },
-         {
-            "type": "liquid",
-            "name": "t:sections.custom_liquid.code",
-            "settings": [
-                 {
-                    "type": "text",
-                    "id": "title",
-                    "label": "t:global.text.title",
-                    "default": "Add liquid code"
-                },
-                {
-                    "type": "liquid",
-                    "id": "liquid",
-                    "label": "t:sections.custom_liquid.code"                   
-                },
-                {
-                    "type": "select",
-                    "id": "width",
-                    "label": "t:sections.footer_section.container_width",
-                    "default": "wd25-md",
-                    "info": "t:sections.footer_section.container_width_info",
-                    "options": [
-                        {
-                            "value": "wd20-md",
-                            "label": "20%"
-                        },
-                        {
-                            "value": "wd25-md",
-                            "label": "25%"
-                        },
-                        {
-                            "value": "wd33-md",
-                            "label": "33%"
-                        },
-                        {
-                            "value": "wd40-md",
-                            "label": "40%"
-                        },
-                        {
-                            "value": "wd50-md",
-                            "label": "50%"
-                        },
-                        {
-                            "value": "wd60-md",
-                            "label": "60%"
-                        },
-                        {
-                            "value": "wd66-md",
-                            "label": "66%"
-                        },
-                        {
-                            "value": "wd75-md",
-                            "label": "75%"
-                        },
-                        {
-                            "value": "wd100",
-                            "label": "100%"
-                        }
-                    ]
-                },
-                {
-                    "type": "checkbox",
-                    "id": "hide_mobile",
-                    "label": "t:global.devices.mobile_hide",
-                    "default": false            
-                 }
-            ]
-        },
-        {
-            "type": "hrline",
-            "name": "t:sections.footer_section.blocks.line.name",
-            "settings": [
-                {
-                    "type": "color",
-                    "id": "lineclr",
-                    "label": "t:global.color.name",
-                    "default": "#eee"
-                }
-            ]
-        },
-        {
-            "type": "cms",
-            "name": "t:sections.footer_section.blocks.space.name",
-            "settings": [
-                {
-                    "type": "paragraph",
-                    "content": "t:sections.footer_section.blocks.space.width"
-                }
-            ]
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "t:global.devices.mobile_hide",
+          "default": false
         }
-    ]
+      ]
+    },
+    {
+      "type": "contact",
+      "name": "t:sections.footer_section.blocks.contact.name",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:global.text.title",
+          "default": "Contact Us"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "t:sections.footer_section.blocks.contact.logo"
+        },
+        {
+          "type": "range",
+          "id": "logo-width",
+          "label": "t:sections.footer_section.max_width",
+          "default": 150,
+          "min": 100,
+          "max": 300,
+          "step": 5,
+          "unit": "px"
+        },
+        {
+          "type": "textarea",
+          "id": "address",
+          "label": "t:sections.footer_section.blocks.contact.address",
+          "default": "55 Gallaxy Enque,<br />2568 steet, 23568 NY"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "t:sections.footer_section.blocks.contact.phone",
+          "default": "(440) 000 000 0000"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "t:sections.footer_section.blocks.contact.email",
+          "default": "sales@yousite.com"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_icons",
+          "label": "t:sections.footer_section.blocks.contact.show_icons",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:sections.contact.socials"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_socials",
+          "label": "t:global.display",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "socials_ttl",
+          "label": "t:global.text.title",
+          "default": "Stay Connected"
+        },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "t:sections.footer_section.container_width",
+          "default": "wd25-md",
+          "info": "t:sections.footer_section.container_width_info",
+          "options": [
+            {
+              "value": "wd20-md",
+              "label": "20%"
+            },
+            {
+              "value": "wd25-md",
+              "label": "25%"
+            },
+            {
+              "value": "wd33-md",
+              "label": "33%"
+            },
+            {
+              "value": "wd40-md",
+              "label": "40%"
+            },
+            {
+              "value": "wd50-md",
+              "label": "50%"
+            },
+            {
+              "value": "wd60-md",
+              "label": "60%"
+            },
+            {
+              "value": "wd66-md",
+              "label": "66%"
+            },
+            {
+              "value": "wd75-md",
+              "label": "75%"
+            },
+            {
+              "value": "wd100",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "t:global.devices.mobile_hide",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "custom",
+      "name": "t:sections.footer_section.blocks.custom.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:global.text.title",
+          "default": "About Us"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "t:global.image.name"
+        },
+        {
+          "type": "range",
+          "id": "logo-width",
+          "label": "t:sections.footer_section.max_width",
+          "default": 150,
+          "min": 100,
+          "max": 300,
+          "step": 5,
+          "unit": "px"
+        },
+        {
+          "type": "textarea",
+          "id": "custom-text",
+          "label": "t:global.text.text",
+          "default": "Making a profitable ecommerce store is hard work. You can't just open a website and expect people to flood in. If you really want to succeed you have to create traffic"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.contact.socials"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_socials",
+          "label": "t:global.display",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "socials_ttl",
+          "label": "t:global.text.title",
+          "default": "Stay Connected"
+        },
+        {
+          "type": "paragraph",
+          "content": "----------------------------------------"
+        },
+        {
+          "type": "checkbox",
+          "id": "txt_align",
+          "label": "t:sections.footer_section.align_center",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "t:sections.footer_section.container_width",
+          "default": "wd25-md",
+          "info": "t:sections.footer_section.container_width_info",
+          "options": [
+            {
+              "value": "wd20-md",
+              "label": "20%"
+            },
+            {
+              "value": "wd25-md",
+              "label": "25%"
+            },
+            {
+              "value": "wd33-md",
+              "label": "33%"
+            },
+            {
+              "value": "wd40-md",
+              "label": "40%"
+            },
+            {
+              "value": "wd50-md",
+              "label": "50%"
+            },
+            {
+              "value": "wd60-md",
+              "label": "60%"
+            },
+            {
+              "value": "wd66-md",
+              "label": "66%"
+            },
+            {
+              "value": "wd75-md",
+              "label": "75%"
+            },
+            {
+              "value": "wd100",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "t:global.devices.mobile_hide",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "t:sections.footer_section.blocks.newsletter.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:global.text.title",
+          "default": "Newsletter"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "t:global.text.text",
+          "default": "Enter your email to receive daily news and get 20% off coupon for all items. NO spam, we promise"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.contact.socials"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_socials",
+          "label": "t:global.display",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "socials_ttl",
+          "label": "t:global.text.title",
+          "default": "Stay Connected"
+        },
+        {
+          "type": "paragraph",
+          "content": "----------------------------------------"
+        },
+        {
+          "type": "checkbox",
+          "id": "newltr_align",
+          "label": "t:sections.footer_section.align_center",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "t:sections.footer_section.container_width",
+          "default": "wd25-md",
+          "info": "t:sections.footer_section.container_width_info",
+          "options": [
+            {
+              "value": "wd20-md",
+              "label": "20%"
+            },
+            {
+              "value": "wd25-md",
+              "label": "25%"
+            },
+            {
+              "value": "wd33-md",
+              "label": "33%"
+            },
+            {
+              "value": "wd40-md",
+              "label": "40%"
+            },
+            {
+              "value": "wd50-md",
+              "label": "50%"
+            },
+            {
+              "value": "wd60-md",
+              "label": "60%"
+            },
+            {
+              "value": "wd66-md",
+              "label": "66%"
+            },
+            {
+              "value": "wd75-md",
+              "label": "75%"
+            },
+            {
+              "value": "wd100",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "t:global.devices.mobile_hide",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "socialicons",
+      "name": "t:sections.footer_section.blocks.social.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:global.text.title",
+          "default": "Stay Connected"
+        },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "t:sections.footer_section.container_width",
+          "default": "wd25-md",
+          "info": "t:sections.footer_section.container_width_info",
+          "options": [
+            {
+              "value": "wd20-md",
+              "label": "20%"
+            },
+            {
+              "value": "wd25-md",
+              "label": "25%"
+            },
+            {
+              "value": "wd33-md",
+              "label": "33%"
+            },
+            {
+              "value": "wd40-md",
+              "label": "40%"
+            },
+            {
+              "value": "wd50-md",
+              "label": "50%"
+            },
+            {
+              "value": "wd60-md",
+              "label": "60%"
+            },
+            {
+              "value": "wd66-md",
+              "label": "66%"
+            },
+            {
+              "value": "wd75-md",
+              "label": "75%"
+            },
+            {
+              "value": "wd100",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "t:global.devices.mobile_hide",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "liquid",
+      "name": "t:sections.custom_liquid.code",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:global.text.title",
+          "default": "Add liquid code"
+        },
+        {
+          "type": "liquid",
+          "id": "liquid",
+          "label": "t:sections.custom_liquid.code"
+        },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "t:sections.footer_section.container_width",
+          "default": "wd25-md",
+          "info": "t:sections.footer_section.container_width_info",
+          "options": [
+            {
+              "value": "wd20-md",
+              "label": "20%"
+            },
+            {
+              "value": "wd25-md",
+              "label": "25%"
+            },
+            {
+              "value": "wd33-md",
+              "label": "33%"
+            },
+            {
+              "value": "wd40-md",
+              "label": "40%"
+            },
+            {
+              "value": "wd50-md",
+              "label": "50%"
+            },
+            {
+              "value": "wd60-md",
+              "label": "60%"
+            },
+            {
+              "value": "wd66-md",
+              "label": "66%"
+            },
+            {
+              "value": "wd75-md",
+              "label": "75%"
+            },
+            {
+              "value": "wd100",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "t:global.devices.mobile_hide",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "hrline",
+      "name": "t:sections.footer_section.blocks.line.name",
+      "settings": [
+        {
+          "type": "color",
+          "id": "lineclr",
+          "label": "t:global.color.name",
+          "default": "#eee"
+        }
+      ]
+    },
+    {
+      "type": "cms",
+      "name": "t:sections.footer_section.blocks.space.name",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.footer_section.blocks.space.width"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

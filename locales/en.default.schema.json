@@ -134,10 +134,10 @@
   "settings_schema": {
     "customer-note": {
       "name": "Dear Customers!",
-      "note": "If you are facing a problem with installation, creating navigation, or configuring our theme, please follow below links or create a support ticket. We will help you as soon as possible. We have tried our best to make our theme easy to use and customise. Thank you for choosing AdornThemes and being our customer !Wishing you abundant sales and a loyal customer base",
-      "doc": "[Avone Documentation](https://www.adornthemes.com/documentation/avone/)",
-      "knowledge": "[Avone knowledge badge](https://www.adornthemes.com/knowledge-base/avone/)",
-      "support": "[Create a Support Ticket](https://adornthemes.com/support)",
+      "note": "If you are facing a problem with installation, creating navigation, or configuring our theme, please follow below links or create a support ticket. We will help you as soon as possible. We have tried our best to make our theme easy to use and customise. Thank you for choosing Joldisoft Technologies and being our customer !Wishing you abundant sales and a loyal customer base",
+      "doc": "[Alpha Documentation](https://joldisoft.com/documentation/alpha/)",
+      "knowledge": "[Alpha knowledge badge](https://joldisoft.com/knowledge-base/alpha/)",
+      "support": "[Create a Support Ticket](https://joldisoft.com/support)",
       "tutorial": "[Basic tutorial by shopify](https://webdesign.tutsplus.com/courses/how-to-create-an-online-store-with-shopify)"
     },
     "layout_style": {
@@ -220,7 +220,7 @@
           "title": "Select Review App",
           "loox": "[Loox Reviews app](https://loox.io/app/AdornLoox)",
           "growave": "[Growave Reviews app](https://growave.io/?ref=sanjay)",
-          "other": "[Other apps? Please follow steps](https://www.adornthemes.com/knowledge-base/add-reviews-code-in-theme-files)"
+          "other": "[Other apps? Please follow steps](https://www.joldisoft.com/knowledge-base/add-reviews-code-in-theme-files)"
         },
         "on_products": "Show Reviews On Product Page?",
         "on_products_grid": "Show Reviews On Products Grid?"
@@ -267,7 +267,7 @@
         "info": "Add new product for free shipping with a minimum amount.",
         "product": {
           "label": "Free shipping Product",
-          "info": "[how to add product](https://www.adornthemes.com/knowledge-base/how-to-set-free-shipping)"
+          "info": "[how to add product](https://www.joldisoft.com/knowledge-base/how-to-set-free-shipping)"
         },
         "show_icon": "Show Shipping Icon?",
         "message": {
@@ -290,7 +290,7 @@
     },
     "fonts_colors": {
       "name": "Fonts, Colors and Styles",
-      "guide": "[Guide - class name for further development and use](https://avon-demo.myshopify.com/pages/typography)",
+      "guide": "[Guide - class name for further development and use](https://alpha-demo.myshopify.com/pages/typography)",
       "fonts": {
         "title": "Fonts =====",
         "source": "Font Source",
@@ -321,7 +321,7 @@
         "title": "Buttons ======",
         "style": {
           "label": "Styles",
-          "info": "checkout different [button style](https://avon-demo.myshopify.com/pages/button-styles)"
+          "info": "checkout different [button style](https://alpha-demo.myshopify.com/pages/button-styles)"
         },
         "solid1": "Solid Button 1 =======",
         "solid2": "Solid Button 2 =======",
@@ -414,15 +414,15 @@
     },
     "header": {
       "title": "Header",
-      "styles": "[preview header styles](https://avon-demo.myshopify.com/pages/header-styles)",
+      "styles": "[preview header styles](https://alpha-demo.myshopify.com/pages/header-styles)",
       "bottom_border": "Bottom Border",
       "top": {
         "title": "Top Header ====",
-        "icon_info": "For icons use code like <i class='at at-phone-l'></i>. [Find icons here](http://www.adornthemes.com/optimal-icons/). use shortcode [social-icons] to show social icons.",
+        "icon_info": "For icons use code like <i class='at at-phone-l'></i>. [Find icons here](http://www.joldisoft.com/optimal-icons/). use shortcode [social-icons] to show social icons.",
         "left_column": "Left column",
         "center_column": "Center column",
         "right_column": "Right column",
-        "column_info": "Wrap text in <p>, <a> or <span> tags [Find icons from here](http://www.adornthemes.com/optimal-icons/)",
+        "column_info": "Wrap text in <p>, <a> or <span> tags [Find icons from here](http://www.joldisoft.com/optimal-icons/)",
         "social_info": "Shortcode [social-icons] will not work here"
       },
       "main": {
@@ -471,7 +471,7 @@
       "cart_note": "Cart Note =====",
       "gift_wrap": {
         "title": "Gift Wrap ======",
-        "info": "[How to add gift wrapping?](https://www.adornthemes.com/knowledge-base/how-to-add-gift-wrapping-vogal/)",
+        "info": "[How to add gift wrapping?](https://www.joldisoft.com/knowledge-base/how-to-add-gift-wrapping-vogal/)",
         "product": "Select Gift Wrap Product",
         "message": "Message",
         "message_info": "Use $ sign to display price",
@@ -485,7 +485,7 @@
     "product_grid": {
       "heading": "Products Grid",
       "style": "Grid Style",
-      "style_info": "[chekout grid style](https://avon-demo.myshopify.com/pages/grid-style)",
+      "style_info": "[chekout grid style](https://alpha-demo.myshopify.com/pages/grid-style)",
       "image": {
         "heading": "Grid Images ====",
         "ratio": "Aspect Ratio",
@@ -510,7 +510,7 @@
         "regular": "Regular Price",
         "sale": "Sale Price",
         "format": "Price Format",
-        "format_info": "[check preview](https://avon-demo.myshopify.com/pages/price-format)",
+        "format_info": "[check preview](https://alpha-demo.myshopify.com/pages/price-format)",
         "append_label": "Append Label before price?",
         "label": "Label"
       },
@@ -566,7 +566,7 @@
         "sizelink": "Show Size Chart Link?",
         "sizelink_info": "Show link above the size swatch that, when clicked, will open a popup displaying the size chart.",
         "type": "Size Chart Type",
-        "type_info": "[how to set size chart?](https://www.adornthemes.com/knowledge-base/how-to-set-size-chart)",
+        "type_info": "[how to set size chart?](https://www.joldisoft.com/knowledge-base/how-to-set-size-chart)",
         "page": "Select Default Page",
         "variant_names": "Add variant option name you want to show size chart",
         "variant_info": "Eg: Size, Dimension, Taille, Velikost, talla, Taglia"
@@ -615,7 +615,7 @@
         "manage": "Currency Manage by",
         "shopify": "1) Shopify: This feature is only available for stores using Shopify Payments. First Check [list of supported countries](https://help.shopify.com/en/manual/payments/shopify-payments/shopify-payments-requirements#can-I-use-shopify-payments)",
         "shopify_info": "Your customers can pay for their orders and receive refunds in their local currency. [Enabling multiple currencies](https://help.shopify.com/manual/payments/multi-currency/setup).",
-        "adornthemes": "2) AdornThemes: Even though prices are displayed in different currencies, orders will still be processed in your store's currency. You need to [edit your store's currency formatting](https://www.adornthemes.com/knowledge-base/multiple-currencies-setup/).",
+        "joldisoft": "2) Joldisoft Technologies: Even though prices are displayed in different currencies, orders will still be processed in your store's currency. You need to [edit your store's currency formatting](https://joldisoft.com/knowledge-base/multiple-currencies-setup/).",
         "auto_currency": "Enable Auto currency switcher",
         "title": "Title text",
         "code": "Show Currency Codes",
@@ -627,13 +627,13 @@
       "language": {
         "heading": "Language ====",
         "manage_by": "Manage by",
-        "weglot_info": "[Install weglot app to use weglot translate on your store](https://dashboard.weglot.com/register?fp_ref=adornthemes)",
+        "weglot_info": "[Install weglot app to use weglot translate on your store](https://dashboard.weglot.com/register?fp_ref=joldisoft)",
         "show_flag": "Show Flag?",
-        "flag_info": "[Download flag zip file](https://www.adornthemes.com/documentation/vogal/flags.zip), then  Upload flag SVG file from Admin -> Content --> Files)",
+        "flag_info": "[Download flag zip file](https://www.joldisoft.com/documentation/vogal/flags.zip), then  Upload flag SVG file from Admin -> Content --> Files)",
         "title": "Title text",
         "default": "Default Language",
         "menu": "Choose Language menu",
-        "menu_info": "[How to create languages menu for weglot?](https://www.adornthemes.com/knowledge-base/how-to-create-languages-menu-for-weglot/)"
+        "menu_info": "[How to create languages menu for weglot?](https://www.joldisoft.com/knowledge-base/how-to-create-languages-menu-for-weglot/)"
       },
       "button": "Button",
       "active_button": "Active Button",
@@ -664,7 +664,7 @@
       "heading": "Newsletter",
       "form": "Form ====",
       "mailchimp": "MailChimp form action URL",
-      "mailchimp_info": "[Find your MailChimp form action URL](https://www.adornthemes.com/where-do-i-find-the-mailchimp-signup-url/).",
+      "mailchimp_info": "[Find your MailChimp form action URL](https://www.joldisoft.com/where-do-i-find-the-mailchimp-signup-url/).",
       "custom": "Custom Code",
       "custom_info": "If you are using third party app for newsletter then add form code here",
       "popup": "Newsletter Popup ====",
@@ -754,7 +754,7 @@
       "name": "Blog Page",
       "banner": {
         "name": "Banner ======",
-        "info": "Use metafield option to show banner image in pages. [How to set this?](https://www.adornthemes.com/knowledge-base/create-metafield-for-page-banner/)",
+        "info": "Use metafield option to show banner image in pages. [How to set this?](https://www.joldisoft.com/knowledge-base/create-metafield-for-page-banner/)",
         "height": "Banner Height ======",
         "container_width": "Container Width",
         "bg_info": "if image is not available",
@@ -793,7 +793,7 @@
       "words": "Truncate Words?",
       "social_sharing": "Show Social Sharing Buttons?",
       "related_products": "Related Products by Metafield ===",
-      "related_products_info": "[How to set metafield for this?](https://www.adornthemes.com/knowledge-base/show-specific-products-in-article-page/)",
+      "related_products_info": "[How to set metafield for this?](https://www.joldisoft.com/knowledge-base/show-specific-products-in-article-page/)",
       "posts": {
         "name": "Blog Post Page"
       },
@@ -880,13 +880,13 @@
     "collections": {
       "list_name": "Collections List",
       "banner_name": "Collections Banners (Masonry)",
-      "style": "[preview style](https://www.adornthemes.com/different-style-for-collection-list/)",
-      "banner_style": "[Preview possible grid style](https://www.adornthemes.com/different-collection-banner-style/)",
+      "style": "[preview style](https://www.joldisoft.com/different-style-for-collection-list/)",
+      "banner_style": "[Preview possible grid style](https://www.joldisoft.com/different-collection-banner-style/)",
       "text_left_padding": "Text Left Padding Zero",
       "text_left_padding_info": "Enable this if you want to display text on left and transparent background as displayed in Jewellery demo",
       "products_count": "Show Products Count?",
       "disable_image_zoom": "Disable Image Hover Zoom Effect?",
-      "column_guide": "[Column Selection guide](https://www.adornthemes.com/masonry-column-selection/)",
+      "column_guide": "[Column Selection guide](https://www.joldisoft.com/masonry-column-selection/)",
       "box_width": "Detail Box Width",
       "add_box": "Add Box?",
       "box_bg": "Box Background",
@@ -909,17 +909,17 @@
           "name": "Collection Banner ======",
           "position": "Banner Position",
           "height": "Banner Height ======",
-          "image_info": "Insert dynamic source to show different image for each collection. [How to set?](https://www.adornthemes.com/knowledge-base/set-collection-banners-by-metafields/)",
+          "image_info": "Insert dynamic source to show different image for each collection. [How to set?](https://www.joldisoft.com/knowledge-base/set-collection-banners-by-metafields/)",
           "color_info": "When image is not available.",
           "title": "Collection Title ======",
-          "description_info": "Insert dynamic source to show different description. [How to set?](https://www.adornthemes.com/knowledge-base/set-collection-banners-by-metafields/)",
+          "description_info": "Insert dynamic source to show different description. [How to set?](https://www.joldisoft.com/knowledge-base/set-collection-banners-by-metafields/)",
           "date": "Date",
-          "date_info": "Insert dynamic source. [How to set?](https://www.adornthemes.com/knowledge-base/set-collection-banners-by-metafields/)"
+          "date_info": "Insert dynamic source. [How to set?](https://www.joldisoft.com/knowledge-base/set-collection-banners-by-metafields/)"
         },
         "default_description": "Default Description",
         "default_description_info": "display from each collection",
         "horizontal_menu": "Horizontal Menu ====",
-        "menu_info": "[How to display?](https://www.adornthemes.com/knowledge-base/sub-collection-list/)",
+        "menu_info": "[How to display?](https://www.joldisoft.com/knowledge-base/sub-collection-list/)",
         "menu_position": "Menu Position",
         "select_menu": "Select Menu",
         "enable_sorting": "Enable Sorting",
@@ -941,7 +941,7 @@
           "dynamic_filters": {
             "name": "Dynamic Filters",
             "app_info": "Customize filters with the Search & Discovery app. [Learn more](https://help.shopify.com/manual/online-store/search-and-discovery/filters).",
-            "tags_info": "This options will not work  with tag base filters. Either choose dynamic filters OR filters by tags.[How to set?](https://www.adornthemes.com/documentation/avone/#ProductFiltersNew)",
+            "tags_info": "This options will not work  with tag base filters. Either choose dynamic filters OR filters by tags.[How to set?](https://www.joldisoft.com/documentation/alphae/#ProductFiltersNew)",
             "two_columns": "Add filter title names that need to show in two columns.",
             "two_columns_info": "Eg: Size, Product type, Brand ...",
             "color_swatch": "Color swatch ===="
@@ -949,7 +949,7 @@
           "tags_filter": {
             "name": "Filter By Tags",
             "color": "Filter By Color Tags",
-            "info": "This options will not work  with dynamic product filters. You can choose either dynamic filters OR product filters using tags. [How to set?](https://www.adornthemes.com/documentation/avone/#ProductFilters)",
+            "info": "This options will not work  with dynamic product filters. You can choose either dynamic filters OR product filters using tags. [How to set?](https://www.joldisoft.com/documentation/alphae/#ProductFilters)",
             "title_info": "i.e 'Filter by Size, Filter by Brands'",
             "add_tag": "Add tag names",
             "add_tag_info": "Separate by a comma, i.e \"Tag1, Tag2, Tag3\".",
@@ -986,7 +986,7 @@
       "name": "Tabs + Products Slider",
       "appearance": "Tabs Appearance ====",
       "tabs_style": "Tab Style",
-      "tabs_style_info": "[tab style](https://www.adornthemes.com/different-tab-styles/)",
+      "tabs_style_info": "[tab style](https://www.joldisoft.com/different-tab-styles/)",
       "active_tab": "Active Tab ====",
       "tabs_on_mobile": "Tabs On Mobile ====",
       "tab_name": "Tab Name"
@@ -1030,7 +1030,7 @@
         "block_product": "Product",
         "block_collection": "Collection",
         "block_liquid": "Custom Liquid",
-        "grid_column_guide": "[Column Selection guide](https://www.adornthemes.com/masonry-column-selection/)",
+        "grid_column_guide": "[Column Selection guide](https://www.joldisoft.com/masonry-column-selection/)",
         "show_swatch": "Show Color Swatch?"
       }
     },
@@ -1124,7 +1124,7 @@
     },
     "grid_banner": {
       "name": "Grid Banners",
-      "styles": "[preview grid style](https://www.adornthemes.com/different-grid-style/)",
+      "styles": "[preview grid style](https://www.joldisoft.com/different-grid-style/)",
       "text1": "Text 1 ====",
       "text2": "Text 2 ====",
       "disable_image_zoom": "Disable Image Hover Zoom Effect?",
@@ -1146,7 +1146,7 @@
     },
     "hero": {
       "name": "Parallax Banner",
-      "styles": "[Preview style](https://www.adornthemes.com/parallax-banner/)",
+      "styles": "[Preview style](https://www.joldisoft.com/parallax-banner/)",
       "enable_parallax": "Enable Parallax Scrolling",
       "parallax_info": "Only applies to desktop. For Parallax Effect Recommanded Image Size 2000x1000 px.",
       "image_info": "For Best Resolution recommended image width 2000px and height should be as per your above selections.",
@@ -1187,7 +1187,7 @@
       "name": "Instagram",
       "shop": "Instagram Shop",
       "api": "API Key",
-      "api_info": "Add Instagram Access Token Key here. [How to get Instagram Access Token?](https://www.adornthemes.com/knowledge-base/how-to-get-instagram-access-token/)",
+      "api_info": "Add Instagram Access Token Key here. [How to get Instagram Access Token?](https://www.joldisoft.com/knowledge-base/how-to-get-instagram-access-token/)",
       "style": "Select Style",
       "enable_space": "Enable Grid Space",
       "number_of_photos": "Number of Photos to Display",
@@ -1213,8 +1213,8 @@
     },
     "lookbook": {
       "name": "Lookbook Shop",
-      "preview": "[preview grid style](https://www.adornthemes.com/different-collection-banner-style/)",
-      "column_guide": "[Column Selection guide](https://www.adornthemes.com/masonry-column-selection/)",
+      "preview": "[preview grid style](https://www.joldisoft.com/different-collection-banner-style/)",
+      "column_guide": "[Column Selection guide](https://www.joldisoft.com/masonry-column-selection/)",
       "block": {
         "name": "Lookbook",
         "add_products": "Add Products ====",
@@ -1252,12 +1252,12 @@
         "wishlist": "Wishlist",
         "custom": "Custom",
         "icon_name": "Icon class name",
-        "icon_info": "[Find icons here](http://www.adornthemes.com/optimal-icons/)"
+        "icon_info": "[Find icons here](http://www.joldisoft.com/optimal-icons/)"
       }
     },
     "navigation": {
       "name": "Main Navigation",
-      "check_style": "[chekout all styles and how to set](https://www.adornthemes.com/knowledge-base/how-to-use-megamenu-navigation/).",
+      "check_style": "[chekout all styles and how to set](https://www.joldisoft.com/knowledge-base/how-to-use-megamenu-navigation/).",
       "change_style": "Change fonts size and colors from Theme Settings --> Fonts, Colors and Styles --> Navigation",
       "show_arrow": "Show Arrow?",
       "alignment": "Menu Alignment",
@@ -1267,7 +1267,7 @@
       "show_image": "Show Image with Links",
       "grid_view": "Grid view for 2nd level",
       "grid_view_info": "Grid view supporting two level navigation only.",
-      "show_image_info": "[how to add image?](https://www.adornthemes.com/knowledge-base/how-to-display-images-for-mobile-menu-items/)",
+      "show_image_info": "[how to add image?](https://www.joldisoft.com/knowledge-base/how-to-display-images-for-mobile-menu-items/)",
       "labels": "Menu Labels ====",
       "label1": "Label 1",
       "label2": "Label 2",
@@ -1372,7 +1372,7 @@
       "hide_header_footer_info": "You can use this option when creating a landing page without a header or footer.",
       "hide_breadcrumb": "Hide Breadcrumb?",
       "page_banner": "Page Banner ====",
-      "page_banner_info": "Use metafield option to show banner image in pages. [How to set this?](https://www.adornthemes.com/knowledge-base/create-metafield-for-page-banner/)",
+      "page_banner_info": "Use metafield option to show banner image in pages. [How to set this?](https://www.joldisoft.com/knowledge-base/create-metafield-for-page-banner/)",
       "banner_title": "Banner Title ====",
       "banner_text": "Banner Text ====",
       "bg_info": "if image is not available",
@@ -1390,8 +1390,8 @@
     },
     "photo_gallery": {
       "name": "Photo Gallery",
-      "preview": "[preview grid style](https://www.adornthemes.com/different-collection-banner-style/)",
-      "column_guide": "[Column Selection guide](https://www.adornthemes.com/masonry-column-selection/)",
+      "preview": "[preview grid style](https://www.joldisoft.com/different-collection-banner-style/)",
+      "column_guide": "[Column Selection guide](https://www.joldisoft.com/masonry-column-selection/)",
       "zoom_icon": "Zoom Icon",
       "zoom_icon_bg": "Zoom Icon Background",
       "block": {
@@ -1408,7 +1408,7 @@
     "related_products": {
       "name": "Related Products",
       "display_products": "Display Products",
-      "display_products_info": "[How this work?](https://www.adornthemes.com/knowledge-base/related-products-shopify/)"
+      "display_products_info": "[How this work?](https://www.joldisoft.com/knowledge-base/related-products-shopify/)"
     },
     "products_columns": {
       "name": "Products Columns",
@@ -1440,7 +1440,7 @@
         "global": "Global Text",
         "content": "Content",
         "richtext": "Rich Text",
-        "metafield_info": "[How to set different data for each products?](https://www.adornthemes.com/knowledge-base/vogal-display-different-tab-details-for-each-product/)",
+        "metafield_info": "[How to set different data for each products?](https://www.joldisoft.com/knowledge-base/vogal-display-different-tab-details-for-each-product/)",
         "specifications": "Specifications",
         "spec_style": "Select Style",
         "spec_per_row": "Specification Per row",
@@ -1473,7 +1473,7 @@
         "description": {
           "name": "Product Description",
           "show": "Show",
-          "metafield": "[Description by metafield?](https://www.adornthemes.com/knowledge-base/vogal-product-metafields/)",
+          "metafield": "[Description by metafield?](https://www.joldisoft.com/knowledge-base/vogal-product-metafields/)",
           "limit": "Short Description Limit",
           "read_more": "Description Read More?",
           "read_more_info": "Keep it blank if you do not want to show read more link below short description"
@@ -1499,7 +1499,7 @@
         },
         "countdown": {
           "name": "Countdown",
-          "info": "[How to set Countdown timer?](https://www.adornthemes.com/knowledge-base/how-to-add-product-countdown-shopify/)",
+          "info": "[How to set Countdown timer?](https://www.joldisoft.com/knowledge-base/how-to-add-product-countdown-shopify/)",
           "style": "Select Style",
           "number_font_size": "Number Font Size",
           "text_font_size": "Text Font Size"
@@ -1524,7 +1524,7 @@
         },
         "custom_option": {
           "name": "Custom Option",
-          "info": "Custom Options are used to collect customization information for an item added to the cart. [Guidelines](https://www.adornthemes.com/knowledge-base/vogal-how-to-add-product-custom-option)",
+          "info": "Custom Options are used to collect customization information for an item added to the cart. [Guidelines](https://www.joldisoft.com/knowledge-base/vogal-how-to-add-product-custom-option)",
           "field_type": "Select Field Type",
           "field_info": "IMPORTANT: Upload file do not support dynamic checkout button. This extra field will not show up in the quick shop and quick view popup.",
           "label": "Field Label",
@@ -1560,7 +1560,7 @@
         },
         "shipping_estimate": {
           "name": "Shipping Estimate",
-          "info": "Display same time for all products, To set different for each product [follow this article](https://www.adornthemes.com/knowledge-base/show-shipping-estimated-time-for-specific-product-2/)",
+          "info": "Display same time for all products, To set different for each product [follow this article](https://www.joldisoft.com/knowledge-base/show-shipping-estimated-time-for-specific-product-2/)",
           "days": "Shipping Estimated Days",
           "days_info": "Add value in days like 4/10 and customer will show date after 4 to 10 days from today date.",
           "message": "Shipping Estimate Message",
@@ -1587,7 +1587,7 @@
         },
         "more_colors": {
           "name": "More Colors",
-          "info": "To select color products, add the metafields. [Learn more](https://www.adornthemes.com/knowledge-base/more-color-products/)",
+          "info": "To select color products, add the metafields. [Learn more](https://www.joldisoft.com/knowledge-base/more-color-products/)",
           "image_width": "Image Width",
           "active_border": "Active Border"
         },
@@ -1601,7 +1601,7 @@
         "feature_text": {
           "name": "Featured Text",
           "icon": "Icon Class Name",
-          "icon_info": "[Find icons here](http://www.adornthemes.com/optimal-icons/)",
+          "icon_info": "[Find icons here](http://www.joldisoft.com/optimal-icons/)",
           "text3": "Feature Text 3",
           "text4": "Feature Text 4"
         },
@@ -1627,7 +1627,7 @@
     "textline": {
       "name": "Promotion Bar",
       "text_info": "Add text in <span> tags if you enable scrolling text",
-      "find_icon": "[Find icons here](http://www.adornthemes.com/optimal-icons/)",
+      "find_icon": "[Find icons here](http://www.joldisoft.com/optimal-icons/)",
       "padding": "Text Padding",
       "enable_text_scrolling": "Enable text scrolling?",
       "scrolling_info": "Hover effect will not work on touch device. If the text in the loop is too short, you must add the same text more than once to avoid loop break.",
@@ -1643,7 +1643,7 @@
       "separation": "Separation Border",
       "feature": "Feature",
       "icon_class": "Icon class name",
-      "icon_info": "[Find icons here](http://www.adornthemes.com/optimal-icons/)"
+      "icon_info": "[Find icons here](http://www.joldisoft.com/optimal-icons/)"
     },
     "top_bar": {
       "name": "Top Information Bar",
@@ -1660,7 +1660,7 @@
     },
     "upsell": {
       "name": "Upsell Product Bundle",
-      "guide": "[How to set?](https://www.adornthemes.com/knowledge-base/how-to-set-upsell-product-bundle/)"
+      "guide": "[How to set?](https://www.joldisoft.com/knowledge-base/how-to-set-upsell-product-bundle/)"
     },
     "before-after": {
       "name": "Before / After Slider",

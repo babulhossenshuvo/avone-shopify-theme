@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Avone",
-    "theme_author": "AdornThemes",
+    "theme_name": "Alpha",
+    "theme_author": "Joldisoft Technologies",
     "theme_version": "5.6.0",
-    "theme_documentation_url": "http:\/\/adornthemes.com\/documentation\/avon",
-    "theme_support_url": "https:\/\/support.adornthemes.com\/"
+    "theme_documentation_url": "https:\/\/joldisoft.com\/documentation\/alpha",
+    "theme_support_url": "https:\/\/support.joldisoft.com\/"
   },
   {
     "name": "t:settings_schema.customer-note.name",
@@ -32,7 +32,7 @@
       },
        {
         "type": "paragraph",
-        "content": "[Demo Store Setup - $199](https://www.adornthemes.com/contact-us/)"
+        "content": "[Demo Store Setup - $199](https://www.joldisoft.com/contact-us/)"
       }     
     ]
   },
@@ -4230,7 +4230,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Follow steps from [given article](https://www.adornthemes.com/knowledge-base/how-to-display-color-variant-media-gallery/) to show color variant image gallery"
+        "content": "Follow steps from [given article](https://www.joldisoft.com/knowledge-base/how-to-display-color-variant-media-gallery/) to show color variant image gallery"
       },
       {
         "type": "select",
@@ -4687,7 +4687,7 @@
           },
           {
             "value": "script",
-            "label": "AdornThemes"
+            "label": "Joldisoft technologies"
           }
         ],
         "default": "shopify"
@@ -4702,7 +4702,7 @@
       },
       {
         "type": "paragraph",
-        "content": "t:settings_schema.currency_language.currency.adornthemes"
+        "content": "t:settings_schema.currency_language.currency.joldisoft"
       },
       {
         "type": "checkbox",
@@ -5294,7 +5294,7 @@
       },
        {
         "type": "paragraph",
-        "content": "[Weglot - Get 20% off](https://dashboard.weglot.com/register?fp_ref=adornthemes) and Instantly translate your store."
+        "content": "[Weglot - Get 20% off](https://dashboard.weglot.com/register?fp_ref=joldisoft) and Instantly translate your store."
       },
        {
         "type": "paragraph",
