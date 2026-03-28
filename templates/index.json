@@ -15,7 +15,6 @@
         "1561726660568-0": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/demo1-winterslide2.png",
             "ialign": "center_center",
             "hd1": "COLD PLAY",
             "pcl": "#222222",
@@ -44,7 +43,6 @@
         "1561726660568-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/demo1-christmas.png",
             "ialign": "center_center",
             "hd1": "",
             "pcl": "#ffffff",
@@ -139,7 +137,7 @@
         "image_6ACKaB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/dome1-bnr1.jpg",
+            "image": "shopify://shop_images/ethnic-slide-2.webp",
             "ialign": "center_center",
             "hd1": "I AM AVONE",
             "pcl": "#222222",
@@ -148,7 +146,7 @@
             "tcl": "#111111",
             "hd3": "A Creative, Flexible, Clean, Easy to use and <br>High Performance shopify theme!",
             "cl": "#444444",
-            "hideh3": true,
+            "hideh3": false,
             "btn": "Shop Now",
             "link": "https://1.envato.market/KdyYx",
             "btn1window": true,
@@ -167,9 +165,8 @@
         },
         "image_jRBWAy": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/dome1-bnr2.jpg",
-            "imagem": "shopify://shop_images/default-mb-bnr2.jpg",
             "ialign": "center_center",
             "hd1": "",
             "pcl": "#000000",
@@ -264,7 +261,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "women",
-            "collection_image": "shopify://shop_images/womens-top.jpg",
             "collection_name": "WOMEN TOPS",
             "collection_name2": "From world's top designer",
             "collection_btn": "DISCOVER NOW",
@@ -278,7 +274,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "men-shoes",
-            "collection_image": "shopify://shop_images/demo1-winter2.png",
             "collection_name": "MEN SHIRTS",
             "collection_name2": "Up to 70% off on selected item",
             "collection_btn": "Shop Now",
@@ -292,7 +287,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "hot-collection",
-            "collection_image": "shopify://shop_images/denim_9fbab35d-066b-4f9e-accb-96416f6594fd.jpg",
             "collection_name": "DENIM",
             "collection_name2": "Find your perfect outfit",
             "collection_btn": "Shop Now",
@@ -306,7 +300,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "accssories",
-            "collection_image": "shopify://shop_images/accesories.jpg",
             "collection_name": "ACCESSORIES",
             "collection_name2": "add finishing touch to your outfit",
             "collection_btn": "Shop Now",
@@ -366,7 +359,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "women",
-            "collection_image": "shopify://shop_images/demo1-winter1.png",
             "collection_name": "WOMEN",
             "collection_name2": "From world's top designer",
             "collection_btn": "SHOP NOW",
@@ -380,7 +372,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "men",
-            "collection_image": "shopify://shop_images/demo1-winter2.png",
             "collection_name": "FALL LEGENDS",
             "collection_name2": "Timeless cold-weather staples",
             "collection_btn": "Shop Now",
@@ -394,7 +385,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "hot-collection",
-            "collection_image": "shopify://shop_images/demo1-winter4.png",
             "collection_name": "HOLIDAY SPARKEL EDIT",
             "collection_name2": "Find your perfect outfit",
             "collection_btn": "Shop Now",
@@ -408,7 +398,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "accssories",
-            "collection_image": "shopify://shop_images/demo1-winter3.png",
             "collection_name": "ACCESSORIES",
             "collection_name2": "finishing touch to your outfit",
             "collection_btn": "Shop Now",
@@ -502,7 +491,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "women",
-            "collection_image": "shopify://shop_images/best-collections.jpg",
             "collection_name": "FIND THE BEST COLLECTION AROUND THE WORLD",
             "collection_name2": "",
             "collection_btn": "Shop Now",
@@ -516,7 +504,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "women-fashion",
-            "collection_image": "shopify://shop_images/awesome-tops.jpg",
             "collection_name": "AWESOME T-SHIRTS, CROP TOPS AND MORE...",
             "collection_name2": "",
             "collection_btn": "SHOP NOW",
@@ -573,7 +560,6 @@
         "logo_image_6HJbJR": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/envato-logo.jpg",
             "link": "https://shopify.pxf.io/qn6kKy",
             "opentab": true
           }
@@ -581,7 +567,6 @@
         "logo_image_EH6mnE": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/shopify-logo.jpg",
             "link": "https://1.envato.market/x5PKR",
             "opentab": true
           }
@@ -589,7 +574,6 @@
         "logo_image_H7jgRJ": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/newlogo2_1.jpg",
             "link": "https://dashboard.weglot.com/register?fp_ref=joldisoft",
             "opentab": true
           }
@@ -597,7 +581,6 @@
         "1561785365595-3": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/newlogo3_1.jpg",
             "link": "https://loox.io/app/AdornLoox",
             "opentab": true
           }
@@ -605,7 +588,6 @@
         "1561785365595-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/newlogo6_1.jpg",
             "link": "https://partners.secomapp.com/apps/affiliate/adorntm",
             "opentab": true
           }
@@ -613,7 +595,6 @@
         "1561785365595-0": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/newlogo7_1.jpg",
             "link": "https://parcelpanel.com/?ref=5e39Ispm",
             "opentab": true
           }
