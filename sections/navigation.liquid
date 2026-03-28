@@ -1,8 +1,10 @@
+{%- render 'brand-logic' -%}
 {%- if section.blocks.size > 0 -%}
 {%- assign secSt = section.settings -%}
 <ul id="siteNav" class="siteNavigation {{ section.settings.menuAlign}}{% if settings.nav_below_logo %} fwmm{% unless settings.main_header_fullwidth %} page-width{% endunless %}{% endif %}" data-section-id="site-{{ section.id }}" data-section-type="site-navigation">
 {%- for block in section.blocks -%}
     {%- assign blkSt = block.settings -%}
+    {%- if blkSt.show_for_brand == 'all' or blkSt.show_for_brand == current_brand -%}
     {%- assign label = blkSt.title | split: '[label' | last  | split: ']' | first | prepend: "nm_label" -%}
     {%- capture linkLevel1 -%}<a href="{% if blkSt.url != blank %}{{ blkSt.url }}{% else %}#{% endif %}" {% if blkSt.newtab %} target="_blank"{% endif %}>{{ blkSt.title | split: '[label' | first }}{% if section.settings.menuarrow %} <i class="at at-angle-down-l"></i>{% endif %}{% if blkSt.title contains '[label' %}<span class="lbl {{label}}">{{ section.settings[label] }}</span>{% endif %}</a>{%- endcapture -%}
     {%- case block.type -%}
@@ -342,6 +344,7 @@
     {%- if blkSt.title != blank -%}<li class="lvl1 parent dropdown" {{ block.shopify_attributes }}>{{linkLevel1}}<ul class="dropdown">{% for link in linklists[blkSt.mm_linklist].links %}{% render 'mm-dropdown', link:link %}{% endfor %}</ul></li>{%- endif -%}
 
     {%- endcase -%}
+    {%- endif -%}
     {%- endfor -%}
 </ul>
 <!--mmobile-->
@@ -355,6 +358,7 @@
     {% else %}
         {%- for block in section.blocks -%}
             {%- assign blkSt = block.settings -%}
+            {%- if blkSt.show_for_brand == 'all' or blkSt.show_for_brand == current_brand -%}
             {%- assign label = blkSt.title | split: '[label' | last  | split: ']' | first | prepend: "nm_label" -%}
             {%- capture linkLevel1 -%}
                 {%- assign imgName = blkSt.title | handleize | prepend: 'mm-' | append: '.png' -%}
@@ -491,6 +495,7 @@
                     </ul>
                 </li>
                 {%- endif -%}
+            {%- endif -%}
             {%- endif -%}
         {%- endfor -%}
         <li></li>
@@ -705,6 +710,20 @@
         "name": "t:sections.navigation.blocks.home",
         "settings": [
           {
+            "type": "select",
+            "id": "show_for_brand",
+            "label": "Show for Brand",
+            "default": "all",
+            "options": [
+              { "value": "all", "label": "All Brands" },
+              { "value": "brand1", "label": "Brand 1" },
+              { "value": "brand2", "label": "Brand 2" },
+              { "value": "brand3", "label": "Brand 3" },
+              { "value": "brand4", "label": "Brand 4" },
+              { "value": "brand5", "label": "Brand 5" }
+            ]
+          },
+          {
             "type": "text",
             "id": "title",
             "label": "t:sections.navigation.link_name",
@@ -716,6 +735,20 @@
         "type": "loginlink",
         "name": "t:sections.navigation.blocks.login.name",
         "settings": [
+          {
+            "type": "select",
+            "id": "show_for_brand",
+            "label": "Show for Brand",
+            "default": "all",
+            "options": [
+              { "value": "all", "label": "All Brands" },
+              { "value": "brand1", "label": "Brand 1" },
+              { "value": "brand2", "label": "Brand 2" },
+              { "value": "brand3", "label": "Brand 3" },
+              { "value": "brand4", "label": "Brand 4" },
+              { "value": "brand5", "label": "Brand 5" }
+            ]
+          },
           {
             "type": "text",
             "id": "loginlink",
@@ -733,6 +766,20 @@
         "type": "single_link",
         "name": "t:sections.navigation.blocks.single",
         "settings": [
+          {
+            "type": "select",
+            "id": "show_for_brand",
+            "label": "Show for Brand",
+            "default": "all",
+            "options": [
+              { "value": "all", "label": "All Brands" },
+              { "value": "brand1", "label": "Brand 1" },
+              { "value": "brand2", "label": "Brand 2" },
+              { "value": "brand3", "label": "Brand 3" },
+              { "value": "brand4", "label": "Brand 4" },
+              { "value": "brand5", "label": "Brand 5" }
+            ]
+          },
           {
             "type": "text",
             "id": "title",

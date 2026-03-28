@@ -1,3 +1,5 @@
+{%- render 'brand-logic' -%}
+{%- if section.settings.show_for_brand == 'all' or section.settings.show_for_brand == current_brand -%}
 {%- assign secSt = section.settings -%}
 {%- capture gridBanners -%}
 <div class="content-indent {{ secSt.top-offeset}}{% if secSt.hide_mobile %} hide-sm{% endif %}{% if secSt.hided %} hide-md hide-lg{% endif %}"> {% capture imageGallery %}
@@ -72,11 +74,27 @@
 <style>
 	.sec-{{section.id}} .imgBnr { border-radius: {{secSt.img_rad}}px;}
 </style>
+{%- endif -%}
+
 {% schema %}
   {
     "name": "t:sections.grid_banner.name",
     "class": "index-section imgBanners",
     "settings": [	
+       {
+        "type": "select",
+        "id": "show_for_brand",
+        "label": "Show for Brand (Multi-Brand System)",
+        "default": "all",
+        "options": [
+          { "value": "all", "label": "All Brands" },
+          { "value": "brand1", "label": "Brand 1" },
+          { "value": "brand2", "label": "Brand 2" },
+          { "value": "brand3", "label": "Brand 3" },
+          { "value": "brand4", "label": "Brand 4" },
+          { "value": "brand5", "label": "Brand 5" }
+        ]
+      },
      {
         "type": "textarea",
         "id": "title",

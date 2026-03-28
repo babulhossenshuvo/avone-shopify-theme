@@ -8,6 +8,67 @@
     "theme_support_url": "https:\/\/support.joldisoft.com\/"
   },
   {
+    "name": "Brand Management",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Multi-Brand Setup"
+      },
+      {
+        "type": "paragraph",
+        "content": "Define your brand names here. You can then select these brands in any homepage section to show/hide sections based on the active brand."
+      },
+      {
+        "type": "text",
+        "id": "brand1_name",
+        "label": "Brand 1 Name",
+        "default": "EIIA"
+      },
+      {
+        "type": "text",
+        "id": "brand2_name",
+        "label": "Brand 2 Name",
+        "default": "GENTLEMAN"
+      },
+      {
+        "type": "text",
+        "id": "brand3_name",
+        "label": "Brand 3 Name",
+        "default": "Belle Doll"
+      },
+      {
+        "type": "text",
+        "id": "brand4_name",
+        "label": "Brand 4 Name",
+        "default": "Amber."
+      },
+      {
+        "type": "text",
+        "id": "brand5_name",
+        "label": "Brand 5 Name",
+        "default": "GLASSY"
+      },
+      {
+        "type": "header",
+        "content": "Theme Editor Preview"
+      },
+      {
+        "type": "select",
+        "id": "preview_brand",
+        "label": "Currently Editing Brand",
+        "default": "brand1",
+        "options": [
+          { "value": "brand1", "label": "Brand 1" },
+          { "value": "brand2", "label": "Brand 2" },
+          { "value": "brand3", "label": "Brand 3" },
+          { "value": "brand4", "label": "Brand 4" },
+          { "value": "brand5", "label": "Brand 5" }
+        ],
+        "info": "Switch this to see and edit sections assigned to different brands in the editor."
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.customer-note.name",
     "settings": [
       {

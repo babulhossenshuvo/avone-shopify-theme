@@ -1,0 +1,35 @@
+{%- liquid
+  # Detect current brand from page handle or template
+  assign current_brand = 'brand1'
+  
+  if request.design_mode
+    assign current_brand = settings.preview_brand
+  endif
+
+  # If we are on a page that represents a brand, use its handle
+  assign brand_handle = page.handle | default: 'home'
+  if brand_handle contains 'brand'
+    assign current_brand = brand_handle
+  endif
+  
+  # Set brand name globally
+  case current_brand
+    when 'brand2'
+      assign brand_name = settings.brand2_name
+    when 'brand3'
+      assign brand_name = settings.brand3_name
+    when 'brand4'
+      assign brand_name = settings.brand4_name
+    when 'brand5'
+      assign brand_name = settings.brand5_name
+    else
+      assign brand_name = settings.brand1_name
+  endcase
+-%}
+
+<script>
+  window.themeBrands = {
+    current: "{{ current_brand }}",
+    name: "{{ brand_name }}"
+  };
+</script>

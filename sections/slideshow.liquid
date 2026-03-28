@@ -1,3 +1,5 @@
+{%- render 'brand-logic' -%}
+{%- if section.settings.show_for_brand == 'all' or section.settings.show_for_brand == current_brand -%}
 {%- assign secSt = section.settings -%}
 {%- capture slideshow_sec -%}
 
@@ -139,12 +141,28 @@
   {% if secSt.hidema %} .slideshow .flickity-button {display:none};{% endif %}	
   }
 </style>
+{%- endif -%}
+
 {% schema %}
   {
     "name": "t:sections.slideshow.name",
     "class": "slideshowOuter",
     "max_blocks": 10,
     "settings": [			
+       {
+        "type": "select",
+        "id": "show_for_brand",
+        "label": "Show for Brand (Multi-Brand System)",
+        "default": "all",
+        "options": [
+          { "value": "all", "label": "All Brands" },
+          { "value": "brand1", "label": "Brand 1" },
+          { "value": "brand2", "label": "Brand 2" },
+          { "value": "brand3", "label": "Brand 3" },
+          { "value": "brand4", "label": "Brand 4" },
+          { "value": "brand5", "label": "Brand 5" }
+        ]
+      },
        {
             "type": "select",
             "id": "top-offeset",
