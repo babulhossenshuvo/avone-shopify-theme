@@ -534,6 +534,41 @@
       "custom-colors": {
         "type": "custom-colors",
         "blocks": {
+          "color_Umfd7B": {
+            "type": "Color",
+            "settings": {
+              "title1": "",
+              "color1": "",
+              "title2": "",
+              "color2": "",
+              "title3": "",
+              "color3": "",
+              "title4": "",
+              "color4": "",
+              "title5": "",
+              "color5": "",
+              "title6": "",
+              "color6": "",
+              "title7": "",
+              "color7": "",
+              "title8": "",
+              "color8": "",
+              "title9": "",
+              "color9": "",
+              "title10": "",
+              "color10": "",
+              "title11": "",
+              "color11": "",
+              "title12": "",
+              "color12": "",
+              "title13": "",
+              "color13": "",
+              "title14": "",
+              "color14": "",
+              "title15": "",
+              "color15": ""
+            }
+          },
           "1888fda2-fecc-4309-8739-4092a6f9dedf": {
             "type": "Color",
             "settings": {
@@ -571,6 +606,7 @@
           }
         },
         "block_order": [
+          "color_Umfd7B",
           "1888fda2-fecc-4309-8739-4092a6f9dedf"
         ],
         "settings": {
