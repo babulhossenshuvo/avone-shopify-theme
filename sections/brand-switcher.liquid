@@ -1,0 +1,265 @@
+{%- assign secSt = section.settings -%}
+{%- if section.blocks.size > 0 -%}
+<style>
+  .brand-switcher-wrapper {
+    background-color: {{ secSt.bg_color }};
+    color: {{ secSt.text_color }};
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .brand-switcher-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    {% if secSt.fullwidth == false %}max-width: var(--page-width); margin: 0 auto;{% endif %}
+  }
+  .brand-switcher-left {
+    display: flex;
+    align-items: center;
+  }
+  .brand-switcher {
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .brand-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-right: 1px solid rgba(255,255,255,0.2);
+  }
+  .brand-link {
+    display: block;
+    padding: 10px 20px;
+    font-size: {{ secSt.font_size }}px;
+    font-weight: {{ secSt.font_weight }};
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+  .brand-item.is-active {
+    background-color: {{ secSt.active_bg_color }};
+    color: {{ secSt.active_text_color }};
+  }
+  .brand-item.is-active .brand-link {
+    color: {{ secSt.active_text_color }};
+  }
+  
+  .brand-switcher-center {
+    flex: 1;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0 15px;
+  }
+  
+  .brand-switcher-right {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+  }
+  .brand-switcher-right .hdicon {
+    color: inherit;
+    padding: 0 10px;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .brand-switcher-right .hdicon i {
+    font-size: 18px;
+  }
+  .brand-switcher-right .hdicon .site-header__cart-count, 
+  .brand-switcher-right .hdicon .favCount {
+    position: absolute;
+    top: -5px;
+    right: 2px;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 700;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .brand-switcher-center, .brand-switcher-right {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .brand-link {
+      padding: 10px 15px;
+      font-size: calc({{ secSt.font_size }}px - 2px);
+    }
+  }
+</style>
+
+<div class="brand-switcher-wrapper">
+  <div class="brand-switcher-container {% if secSt.fullwidth %}fullwidth{% else %}page-width{% endif %}">
+    <div class="brand-switcher-left">
+      <ul class="brand-switcher">
+        {%- for block in section.blocks -%}
+          {%- assign blkSt = block.settings -%}
+          {%- if blkSt.title != blank -%}
+            {%- liquid
+              assign is_active = false
+              if blkSt.url != blank and request.path == blkSt.url
+                assign is_active = true
+              elsif blkSt.url == '/' and request.path == '/'
+                assign is_active = true
+              endif
+            -%}
+            <li class="brand-item{% if is_active %} is-active{% endif %}" {{ block.shopify_attributes }}>
+              <a href="{{ blkSt.url | default: '#' }}" class="brand-link">
+                {{ blkSt.title }}
+              </a>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+
+    {% if secSt.promo_text != blank %}
+    <div class="brand-switcher-center hide-sm">
+      {{ secSt.promo_text }}
+    </div>
+    {% endif %}
+
+    <div class="brand-switcher-right hide-sm">
+      {% if shop.customer_accounts_enabled %}
+        <a href="{{ routes.account_url }}" class="hdicon site-settings" title="Account">
+          <i class="at at-user-l"></i>
+        </a>
+      {% endif %}
+      
+      {% if settings.enable_wishlist %}
+        <a href="{{pages[settings.wishlist_page].url}}" class="hdicon wishlist" title="Wishlist">
+          <i class="at at-heart-l"></i>
+          <span class="favCount hide">0</span>
+        </a>
+      {% endif %}
+
+      {%- unless settings.catalogmode -%}
+        <a href="{{ routes.cart_url }}" class="hdicon header-cart" title="Cart">
+          <i class="at at-bag-l"></i>
+          <span id="CartCount" class="site-header__cart-count">{{ cart.item_count }}</span>
+        </a>
+      {%- endunless -%}
+      
+      {% if settings.show_language or settings.show_multiple_currencies %}
+         <a href="#" class="hdicon site-settings ml10">
+           <i class="at at-globe-l"></i>
+         </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Brand Switcher",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Full Width",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "active_bg_color",
+      "label": "Active Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "active_text_color",
+      "label": "Active Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "textarea",
+      "id": "promo_text",
+      "label": "Promo Text",
+      "default": "EXTRA 10% OFF ON FIRST ORDER"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Font Size",
+      "default": 14,
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font Weight",
+      "default": "700",
+      "options": [
+        { "value": "400", "label": "Regular" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Brand Name",
+          "default": "Brand Name"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Brand Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Switcher",
+      "blocks": [
+        { "type": "brand", "settings": { "title": "EIIA", "url": "/" } },
+        { "type": "brand", "settings": { "title": "GENTLEMAN" } },
+        { "type": "brand", "settings": { "title": "Belle Doll" } },
+        { "type": "brand", "settings": { "title": "Amber." } },
+        { "type": "brand", "settings": { "title": "GLASSY" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
