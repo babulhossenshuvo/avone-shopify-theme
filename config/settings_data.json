@@ -748,6 +748,55 @@
           "bg": "#111111",
           "bgg": ""
         }
+      },
+      "brand-switcher": {
+        "type": "brand-switcher",
+        "blocks": {
+          "brand_4x9CAV": {
+            "type": "brand",
+            "settings": {
+              "title": "Brand Name",
+              "url": ""
+            }
+          },
+          "brand_WHfjPD": {
+            "type": "brand",
+            "settings": {
+              "title": "Brand Name",
+              "url": ""
+            }
+          },
+          "brand_qpJyDC": {
+            "type": "brand",
+            "settings": {
+              "title": "Brand Name",
+              "url": ""
+            }
+          },
+          "brand_DyYQ9A": {
+            "type": "brand",
+            "settings": {
+              "title": "Brand Name",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "brand_4x9CAV",
+          "brand_WHfjPD",
+          "brand_qpJyDC",
+          "brand_DyYQ9A"
+        ],
+        "settings": {
+          "fullwidth": true,
+          "bg_color": "#000000",
+          "text_color": "#ffffff",
+          "active_bg_color": "#ffffff",
+          "active_text_color": "#000000",
+          "promo_text": "EXTRA 10% OFF ON FIRST ORDER",
+          "font_size": 14,
+          "font_weight": "700"
+        }
       }
     },
     "content_for_index": []
