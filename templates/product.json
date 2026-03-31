@@ -15,8 +15,8 @@
         "title": {
           "type": "title",
           "settings": {
-            "cl": "#444444",
-            "fs": 22,
+            "cl": "#000000",
+            "fs": 20,
             "fsm": 18,
             "ff": "ft2",
             "fw": "600",
@@ -36,7 +36,7 @@
           "type": "price",
           "settings": {
             "pcl": "#333333",
-            "pcls": "#e95144",
+            "pcls": "#000000",
             "fs": 25,
             "fsm": 18,
             "pfw": "600",
@@ -49,7 +49,7 @@
           "type": "countdown",
           "settings": {
             "cstyle": "cst1",
-            "lbl": "Hurry up! Sales End In",
+            "lbl": "তাড়াতাড়ি করুন! স্টক সীমিত।",
             "lcl": "#000000",
             "cl": "#060101",
             "bg": "#f5f5f5",
