@@ -151,7 +151,7 @@
         "tablet-grid": 3,
         "mobile-grid": 2,
         "rows": 5,
-        "secondary_image": true,
+        "secondary_image": false,
         "show_vendor": false,
         "prlist_btn_show": false,
         "btn_mobiles": false,
@@ -162,7 +162,7 @@
         "autoplay": true,
         "speed": 5,
         "show_view_all": "",
-        "btn-style": "btn"
+        "btn-style": "btn2"
       }
     },
     "collections_banners_qhq6xc": {
