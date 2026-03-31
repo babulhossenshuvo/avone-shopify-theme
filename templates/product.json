@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "product": {
@@ -98,7 +107,9 @@
             "bm": 20,
             "visible": "product",
             "based": "",
-            "products": ["men-striped-ringer-tee"],
+            "products": [
+              "men-striped-ringer-tee"
+            ],
             "meta": ""
           }
         },
@@ -113,7 +124,9 @@
             "bm": 15,
             "visible": "product",
             "based": "",
-            "products": ["men-striped-ringer-tee"],
+            "products": [
+              "men-striped-ringer-tee"
+            ],
             "meta": ""
           }
         },
@@ -128,7 +141,9 @@
             "bm": 30,
             "visible": "product",
             "based": "",
-            "products": ["men-striped-ringer-tee"],
+            "products": [
+              "men-striped-ringer-tee"
+            ],
             "meta": ""
           }
         },
@@ -161,16 +176,15 @@
         "7da62210-79f5-40cd-88d9-008adfa782ab": {
           "type": "shiptime",
           "settings": {
-            "estimate": "4\/10",
-            "msg": "Expected Delivery on  [startdate] - [enddate].",
+            "estimate": "12/18",
+            "msg": "প্রত্যাশিত ডেলিভারি তারিখ [startdate] - [enddate].",
             "bm": 25
           }
         },
         "3e5ff436-8638-45b7-a3ce-b36263b34395": {
           "type": "img",
           "settings": {
-            "title": "<span class=\"fw-500\">GUARANTEED SAFE CHECKOUT<\/span>",
-            "pimg": "shopify:\/\/shop_images\/new-trust-badge.jpg",
+            "title": "<span class=\"fw-500\">GUARANTEED SAFE CHECKOUT</span>",
             "pimg_url": "",
             "addbg": true,
             "bg": "#f5f5f5",
@@ -197,8 +211,27 @@
           }
         }
       },
-      "block_order": ["title", "3794d304-5ede-42ea-872e-bc1da0adbb2c", "price", "a2aade4c-547b-4aba-aacc-5d7c2f763857", "680b2e1a-82d6-4aad-9a5b-3344aae6a5aa", "43d9e0cf-f5b3-4270-bd73-3845bf580da3", "variants_Tn3fbd", "pco_xX3JMR", "pco_X8cM9w", "pco_Q9LeDR", "wishlist_aQWTED", "product-form", "d33de9c7-9498-4084-8045-ea7cb7cec34e", "7da62210-79f5-40cd-88d9-008adfa782ab", "3e5ff436-8638-45b7-a3ce-b36263b34395", "9cbdef45-9088-401c-90c8-c807e38f6cd5"],
+      "block_order": [
+        "title",
+        "3794d304-5ede-42ea-872e-bc1da0adbb2c",
+        "price",
+        "a2aade4c-547b-4aba-aacc-5d7c2f763857",
+        "680b2e1a-82d6-4aad-9a5b-3344aae6a5aa",
+        "43d9e0cf-f5b3-4270-bd73-3845bf580da3",
+        "variants_Tn3fbd",
+        "pco_xX3JMR",
+        "pco_X8cM9w",
+        "pco_Q9LeDR",
+        "wishlist_aQWTED",
+        "product-form",
+        "d33de9c7-9498-4084-8045-ea7cb7cec34e",
+        "7da62210-79f5-40cd-88d9-008adfa782ab",
+        "3e5ff436-8638-45b7-a3ce-b36263b34395",
+        "9cbdef45-9088-401c-90c8-c807e38f6cd5"
+      ],
       "settings": {
+        "top-offset": "none",
+        "page_width": 1200,
         "section_width": false,
         "npd": false
       }
@@ -207,7 +240,8 @@
       "type": "upsell-bundle",
       "settings": {
         "title": "Frequently Bought Together",
-        "subtitle": "",      
+        "subtitle": "",
+        "collection": "",
         "top-offeset": "default",
         "section_cov": true,
         "sec_bg_clr": "#fafafa",
@@ -227,7 +261,8 @@
         "spec_eyp8Bk": {
           "type": "spec",
           "settings": {
-            "title": "SPECIFICATIONS",           
+            "title": "SPECIFICATIONS",
+            "content": "",
             "style": "2",
             "grid": 4,
             "tgrid": 3,
@@ -253,14 +288,14 @@
           "type": "custom",
           "settings": {
             "title": "SHIPPING & RETURNS",
-            "content": "<h4>Returns Policy<\/h4>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros justo, accumsan non dui sit amet. Phasellus semper volutpat mi sed imperdiet. Ut odio lectus, vulputate non ex non, mattis sollicitudin purus. Mauris consequat justo a enim interdum, in consequat dolor accumsan. Nulla iaculis diam purus, ut vehicula leo efficitur at.<\/p>\n<p><br>Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit nunc enim, sit amet pharetra erat aliquet ac.<\/p>\n\n<h4>Shipping<\/h4>\n<p>Pellentesque ultrices ut sem sit amet lacinia. Sed nisi dui, ultrices ut turpis pulvinar. Sed fringilla ex eget lorem consectetur, consectetur blandit lacus varius. Duis vel scelerisque elit, et vestibulum metus. Integer sit amet tincidunt tortor. Ut lacinia ullamcorper massa, a fermentum arcu vehicula ut. Ut efficitur faucibus dui Nullam tristique dolor eget turpis consequat varius. Quisque a interdum augue. Nam ut nibh mauris.<\/p>"
+            "content": "<h4>Returns Policy</h4>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros justo, accumsan non dui sit amet. Phasellus semper volutpat mi sed imperdiet. Ut odio lectus, vulputate non ex non, mattis sollicitudin purus. Mauris consequat justo a enim interdum, in consequat dolor accumsan. Nulla iaculis diam purus, ut vehicula leo efficitur at.</p>\n<p><br>Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit nunc enim, sit amet pharetra erat aliquet ac.</p>\n\n<h4>Shipping</h4>\n<p>Pellentesque ultrices ut sem sit amet lacinia. Sed nisi dui, ultrices ut turpis pulvinar. Sed fringilla ex eget lorem consectetur, consectetur blandit lacus varius. Duis vel scelerisque elit, et vestibulum metus. Integer sit amet tincidunt tortor. Ut lacinia ullamcorper massa, a fermentum arcu vehicula ut. Ut efficitur faucibus dui Nullam tristique dolor eget turpis consequat varius. Quisque a interdum augue. Nam ut nibh mauris.</p>"
           }
         },
         "richtext_c9MUj3": {
           "type": "richtext",
           "settings": {
             "title": "CUSTOM TAB",
-            "content": "<p>Product custom tab is a useful tool that allows store to display different product details for each individual product. This feature provides a more comprehensive and tailored approach as it enables companies to showcase specific information related to their products. <\/p><p>It is an excellent way to provide customers with in-depth details such as ingredients, materials used, dimensions, and other specifications that are unique to each product. By using the product custom tab, businesses can ensure transparency and accuracy in providing product information, which builds trust and credibility among consumers. This feature also gives customers the opportunity to make informed decisions based on their preferences and needs.<\/p>"
+            "content": "<p>Product custom tab is a useful tool that allows store to display different product details for each individual product. This feature provides a more comprehensive and tailored approach as it enables companies to showcase specific information related to their products. </p><p>It is an excellent way to provide customers with in-depth details such as ingredients, materials used, dimensions, and other specifications that are unique to each product. By using the product custom tab, businesses can ensure transparency and accuracy in providing product information, which builds trust and credibility among consumers. This feature also gives customers the opportunity to make informed decisions based on their preferences and needs.</p>"
           }
         },
         "faq_4H8pQ8": {
@@ -275,7 +310,15 @@
           }
         }
       },
-      "block_order": ["descriptions", "spec_eyp8Bk", "review", "0ffa6649-39c4-4d0d-a030-0b83e8ea10b2", "ca4b9cc3-1de5-4957-9152-20d832cd0b41", "richtext_c9MUj3", "faq_4H8pQ8"],
+      "block_order": [
+        "descriptions",
+        "spec_eyp8Bk",
+        "review",
+        "0ffa6649-39c4-4d0d-a030-0b83e8ea10b2",
+        "ca4b9cc3-1de5-4957-9152-20d832cd0b41",
+        "richtext_c9MUj3",
+        "faq_4H8pQ8"
+      ],
       "settings": {
         "section_width": false,
         "tab_style": "1",
@@ -344,5 +387,12 @@
       }
     }
   },
-  "order": ["product", "upsell", "tabs", "related-products", "recommendations", "recently-viewed"]
+  "order": [
+    "product",
+    "upsell",
+    "tabs",
+    "related-products",
+    "recommendations",
+    "recently-viewed"
+  ]
 }
