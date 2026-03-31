@@ -48,7 +48,7 @@
         "a2aade4c-547b-4aba-aacc-5d7c2f763857": {
           "type": "countdown",
           "settings": {
-            "cstyle": "cst1",
+            "cstyle": "cst2",
             "lbl": "তাড়াতাড়ি করুন! স্টক সীমিত।",
             "lcl": "#000000",
             "cl": "#060101",
@@ -69,11 +69,11 @@
             "fstl": "normal",
             "fw": "500",
             "instock": "#54c63a",
-            "lstock": "#f4af29",
+            "lstock": "#bb00fa",
             "ostock": "#ee1111",
             "bgadd": true,
             "cl": "#ffffff",
-            "bdr": 0,
+            "bdr": 5,
             "bm": 20
           }
         },
@@ -98,9 +98,10 @@
         },
         "pco_xX3JMR": {
           "type": "pco",
+          "disabled": true,
           "settings": {
             "type": "short",
-            "title": "Add Name",
+            "title": "Custom",
             "options": "",
             "required": false,
             "show-check": true,
@@ -108,7 +109,8 @@
             "visible": "product",
             "based": "",
             "products": [
-              "men-striped-ringer-tee"
+              "men-striped-ringer-tee",
+              "lawn-angrakha-in-pink-by-zellbury"
             ],
             "meta": ""
           }
@@ -149,6 +151,7 @@
         },
         "wishlist_aQWTED": {
           "type": "wishlist",
+          "disabled": true,
           "settings": {
             "askaboutproduct": true,
             "shippingpopup": true,
@@ -161,7 +164,7 @@
           "settings": {
             "qty_sel": true,
             "giftcard_recipient": true,
-            "bm": 30,
+            "bm": 15,
             "bis": true,
             "bd": "#eeeeee",
             "bdr": 0
@@ -169,6 +172,7 @@
         },
         "d33de9c7-9498-4084-8045-ea7cb7cec34e": {
           "type": "freeship",
+          "disabled": true,
           "settings": {
             "bm": 15
           }
@@ -255,13 +259,13 @@
         "descriptions": {
           "type": "desc",
           "settings": {
-            "title": "PRODUCT DETAILS"
+            "title": "পণ্যের বিবরণ"
           }
         },
         "spec_eyp8Bk": {
           "type": "spec",
           "settings": {
-            "title": "SPECIFICATIONS",
+            "title": "স্পেসিফিকেশন",
             "content": "",
             "style": "2",
             "grid": 4,
@@ -279,7 +283,6 @@
         },
         "0ffa6649-39c4-4d0d-a030-0b83e8ea10b2": {
           "type": "schart",
-          "disabled": true,
           "settings": {
             "title": "SIZE & FIT"
           }
@@ -287,8 +290,8 @@
         "ca4b9cc3-1de5-4957-9152-20d832cd0b41": {
           "type": "custom",
           "settings": {
-            "title": "SHIPPING & RETURNS",
-            "content": "<h4>Returns Policy</h4>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros justo, accumsan non dui sit amet. Phasellus semper volutpat mi sed imperdiet. Ut odio lectus, vulputate non ex non, mattis sollicitudin purus. Mauris consequat justo a enim interdum, in consequat dolor accumsan. Nulla iaculis diam purus, ut vehicula leo efficitur at.</p>\n<p><br>Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit nunc enim, sit amet pharetra erat aliquet ac.</p>\n\n<h4>Shipping</h4>\n<p>Pellentesque ultrices ut sem sit amet lacinia. Sed nisi dui, ultrices ut turpis pulvinar. Sed fringilla ex eget lorem consectetur, consectetur blandit lacus varius. Duis vel scelerisque elit, et vestibulum metus. Integer sit amet tincidunt tortor. Ut lacinia ullamcorper massa, a fermentum arcu vehicula ut. Ut efficitur faucibus dui Nullam tristique dolor eget turpis consequat varius. Quisque a interdum augue. Nam ut nibh mauris.</p>"
+            "title": "শিপিং এবং রিটার্ন",
+            "content": "<div class=\"shaaz-policy-container\" style=\"font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 20px 0; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden;\">\n  \n  <div class=\"policy-section\" style=\"padding: 20px; border-bottom: 1px solid #eee;\">\n    <h3 style=\"color: #b08d57; margin-top: 0; display: flex; align-items: center; font-size: 1.2rem;\">\n      <span style=\"margin-right: 10px;\">🚚</span> শিপিং ও ডেলিভারি (Shipping & Delivery)\n    </h3>\n    <p style=\"margin-bottom: 15px;\"><strong>SHAAZ</strong>-এ আমরা প্রতিটি ড্রেসের বিশুদ্ধতা নিশ্চিত করতে একটি সুনির্দিষ্ট এবং স্বচ্ছ প্রক্রিয়া অনুসরণ করি। আমাদের প্রতিটি পণ্যের নির্ধারিত মূল্যের মধ্যেই আন্তর্জাতিক শিপিং এবং হোম ডেলিভারি চার্জ অন্তর্ভুক্ত থাকে।</p>\n    \n    <ul style=\"list-style: none; padding-left: 0;\">\n      <li style=\"margin-bottom: 10px; padding-left: 25px; position: relative;\">\n        <strong>✅ অল-ইনক্লুসিভ প্রাইসিং:</strong> আমাদের কোনো লুকানো খরচ বা অতিরিক্ত ডেলিভারি চার্জ নেই। ড্রেসের নির্ধারিত মূল্যই আপনার চূড়ান্ত পরিশোধযোগ্য মূল্য।\n      </li>\n      <li style=\"margin-bottom: 10px; padding-left: 25px; position: relative;\">\n        <strong>✅ সরাসরি পাকিস্তান থেকে সোর্সিং:</strong> আমরা সরাসরি পাকিস্তানের নির্ভরযোগ্য প্ল্যাটফর্ম <strong>LAAM.PK</strong> বা মূল ব্র্যান্ড স্টোর থেকে পণ্য সংগ্রহ করি।\n      </li>\n      <li style=\"margin-bottom: 10px; padding-left: 25px; position: relative;\">\n        <strong>✅ ডেলিভারি পাথওয়ে:</strong> পাকিস্তান ওয়্যারহাউস ➡️ ঢাকা ওয়্যারহাউস ➡️ আপনার ঠিকানা।\n      </li>\n      <li style=\"margin-bottom: 10px; padding-left: 25px; position: relative;\">\n        <strong>✅ ডেলিভারি সময়সীমা:</strong> সরাসরি পাকিস্তান থেকে শিপমেন্ট করা হয় বিধায় অর্ডার কনফার্মেশনের পর সাধারণত <strong>১০ থেকে ১৫ কার্যদিবস</strong> সময় প্রয়োজন হয়।\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"policy-section\" style=\"padding: 20px; background-color: #fafafa;\">\n    <h3 style=\"color: #b08d57; margin-top: 0; display: flex; align-items: center; font-size: 1.2rem;\">\n      <span style=\"margin-right: 10px;\">🔄</span> রিটার্ন ও রিফান্ড পলিসি (Return & Refund)\n    </h3>\n    <p style=\"margin-bottom: 15px;\">আমরা শুধুমাত্র ১০০% অরিজিনাল ব্র্যান্ডের পণ্য সরবরাহ করি। আপনার আস্থা ও লয়্যালটিই আমাদের মূল চালিকাশক্তি।</p>\n    \n    <ul style=\"list-style: none; padding-left: 0;\">\n      <li style=\"margin-bottom: 10px; padding-left: 25px; position: relative;\">\n        <strong>⚠️ সাইজ ও পছন্দ পরিবর্তন:</strong> যেহেতু প্রতিটি ড্রেস আপনার ব্যক্তিগত অর্ডারের ভিত্তিতে সরাসরি বিদেশ থেকে আনা হয়, তাই সাইজ পরিবর্তন বা ব্যক্তিগত পছন্দ পরিবর্তনের কারণে কোনো রিটার্ন বা এক্সচেঞ্জ সম্ভব নয়। অনুগ্রহ করে অর্ডার করার আগে 'Size Chart' দেখে নিন।\n      </li>\n      <li style=\"margin-bottom: 10px; padding-left: 25px; position: relative;\">\n        <strong>⚠️ ত্রুটিপূর্ণ পণ্য:</strong> যদি ভুল পণ্য বা বড় কোনো ম্যানুফ্যাকচারিং ত্রুটি থাকে, তবে ডেলিভারি গ্রহণের সময়ই আমাদের অবহিত করুন। আমরা আপনার সমস্যাটি অত্যন্ত গুরুত্বের সাথে সমাধান করব।\n      </li>\n      <li style=\"margin-bottom: 10px; padding-left: 25px; position: relative;\">\n        <strong>⚠️ অর্ডার বাতিলকরণ:</strong> অর্ডারের সময় প্রদানকৃত ৫০% ডাউনপেমেন্ট রিফান্ডযোগ্য নয়, কারণ আপনার অর্ডারের প্রেক্ষিতেই আমরা সরাসরি পণ্যটি বুকিং করি।\n      </li>\n    </ul>\n  </div>\n\n  <div style=\"background-color: #b08d57; color: white; padding: 15px; text-align: center; font-weight: bold;\">\n    SHAAZ — আস্থার সাথে আভিজাত্যের মিলন।\n  </div>\n</div>"
           }
         },
         "richtext_c9MUj3": {
