@@ -809,18 +809,10 @@
     },
     "content_for_index": [],
     "blocks": {
-      "1626193551103621034": {
-        "type": "shopify://apps/cod-king/blocks/app-embed/99553eb5-bf07-4ce0-9263-7e5f10cab22c",
+      "13669795325273674392": {
+        "type": "shopify://apps/releasit-cod-form/blocks/app-embed/72faf214-4174-4fec-886b-0d0e8d3af9a2",
         "disabled": false,
         "settings": {}
-      },
-      "6464650315188175684": {
-        "type": "shopify://apps/dibs/blocks/lb-ordereasy-embed/7cc74442-1b61-4b87-afed-944e0def999c",
-        "disabled": false,
-        "settings": {
-          "ordereasy_custom_script": "<script></script>",
-          "disable_form_product_validation": false
-        }
       }
     }
   },
